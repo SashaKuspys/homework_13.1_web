@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "homework-13-1-web"
+version = "0.1.0"
+description = ""
+authors = ["SashaKuspys <134163412+SashaKuspys@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "homework_13"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlalchemy = "^2.0.24"
+fastapi = "^0.108.0"
+alembic = "^1.13.1"
+asyncpg = "^0.29.0"
+uvicorn = "^0.25.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+pydantic = {extras = ["email"], version = "^2.5.3"}
+python-multipart = "^0.0.6"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+libgravatar = "^1.0.4"
+bcrypt = "^4.1.2"
+fastapi-mail = "^1.4.1"
+python-dotenv = "^1.0.0"
+redis = "==4.*"
+fastapi-limiter = "^0.1.5"
+cloudinary = "^1.37.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
